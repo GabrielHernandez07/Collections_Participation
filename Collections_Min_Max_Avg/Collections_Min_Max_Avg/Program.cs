@@ -18,12 +18,24 @@ namespace Collections_Min_Max_Avg
 
                 Console.WriteLine("Do you want to enter another exam grade? Yes or No? >>");
                 answer = Console.ReadLine();
+                if (answer.ToLower() == "yes")
+                {
+
+                }
+                else if (answer.ToLower() == "no")
+                {
+
+                }
+                else
+                {
+                    Console.WriteLine($"{answer} is an invalid response. GoodBye.");
+                }
 
             } while (answer.ToLower() == "yes");
 
             double max = 0;
             double average = 0;
-            double min = 100;
+            double min = 1000;
 
             foreach (double grade in examGrades)
             {
